@@ -13,4 +13,4 @@ Have fun playing the "Cows and Bulls" game and see how quickly you can crack the
 
 
 ## Web App
-https://suhas-2002.github.io/Cows-and-Bulls/
+https://suhas-2002.github.io/Cows-and-Bulls-Game/
