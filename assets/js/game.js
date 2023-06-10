@@ -16,7 +16,7 @@ guessInput.addEventListener('keydown', handleKeyDown);
 
 // Function to generate a random 3-digit number
 function generateRandomNumber() {
-    const digits = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     let number = '';
     
     for (let i = 0; i < 3; i++) {
@@ -91,6 +91,11 @@ function submitGuess() {
     return;
   }
 
+  if (!isValidInput(guessString)) {
+    alert('Digits in the guess should not countain 0. Please enter a valid 3-digit number.');
+    return;
+  }
+
   const [cows, bulls] = checkGuess(guess);
 
   if (bulls === 3) {
@@ -143,6 +148,11 @@ function handleKeyDown(event) {
 
 function hasRepeatingDigits(str) {
   return (/([0-9]).*?\1/).test(str);
+}
+
+// Validate the input guess
+function isValidInput(guess) {
+  return (/^[^0]{3}$/).test(guess);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
