@@ -1,5 +1,5 @@
 // Generate random 3-digit number for the computer's guess
-const computerNumber = generateRandomNumber();
+let computerNumber = generateRandomNumber();
 
 // Store game data
 let attempts = 0;
@@ -100,7 +100,7 @@ function submitGuess() {
 
   if (bulls === 3) {
     // User guessed the correct number
-    alert(`Congratulations! You guessed the correct number in ${attempts} attempts.`);
+    alert(`Congratulations! You guessed the correct number in ${attempts+1} attempts.`);
     submitBtn.disabled = true;
     
     // Start a new game and clear the input field
@@ -132,7 +132,6 @@ function newGame() {
   gameData.length = 0;
   resultsBody.innerHTML = '';
   computerNumber = generateRandomNumber();
-  document.getElementById('status').textContent = "The computer has guessed a 3-digit number. It's your turn to guess!";
   submitBtn.disabled = false;
   guessInput.value = '';
   guessInput.focus();
