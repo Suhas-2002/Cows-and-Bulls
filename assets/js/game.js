@@ -99,8 +99,9 @@ function submitGuess() {
   const [cows, bulls] = checkGuess(guess);
 
   if (bulls === 3) {
+    updateGameStatus(cows, bulls);
     // User guessed the correct number
-    alert(`Congratulations! You guessed the correct number in ${attempts+1} attempts.`);
+    alert(`Congratulations! You guessed the correct number in ${attempts} attempts.`);
     submitBtn.disabled = true;
     
     // Start a new game and clear the input field
