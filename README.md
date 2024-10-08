@@ -12,7 +12,9 @@ The game features a responsive web interface built using HTML, CSS, and JavaScri
 Have fun playing the "Cows and Bulls" game and see how quickly you can crack the code!
 
 ## Web App
-https://suhas-2002.github.io/Cows-and-Bulls-Game/
+https://hspsuhas.github.io/Cows-and-Bulls-Game/
+
+https://cowsandbulls.vercel.app/
 
 ## Future Scope
 The app only supports single player as of now and turning this into a multiplayer game is the future scope.
